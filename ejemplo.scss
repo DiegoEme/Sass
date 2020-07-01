@@ -1,0 +1,43 @@
+$color-principal: rgba(122, 2, 2, 0.562);
+$color-secundario: rgb(196, 196, 252);
+
+.texto {
+  color: $color-principal;
+
+  .lorem {
+    padding: 1em;
+    width: 45%;
+    span {
+      background-color: gold;
+    }
+  }
+  img {
+    border: 5px solid $color-principal;
+    width: 30%;
+  }
+}
+
+.texto {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin transform($property) {
+  transform: $property;
+}
+.lorem:hover {
+  @include transform(scale(1.1));
+}
+
+.lorem {
+  background-color: lighten($color: #000000, $amount: 80%);
+  border: 2px solid $color-principal;
+  border-radius: 5px;
+}
+
+#texto-caja {
+  @extend .lorem;
+  font-size: larger;
+}

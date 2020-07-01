@@ -1,0 +1,41 @@
+.texto {
+  color: rgba(122, 2, 2, 0.562);
+}
+.texto .lorem,
+.texto #texto-caja {
+  padding: 1em;
+  width: 45%;
+}
+.texto .lorem span,
+.texto #texto-caja span {
+  background-color: gold;
+}
+.texto img {
+  border: 5px solid rgba(122, 2, 2, 0.562);
+  width: 30%;
+}
+
+.texto {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lorem:hover,
+#texto-caja:hover {
+  transform: scale(1.1);
+}
+
+.lorem,
+#texto-caja {
+  background-color: #cccccc;
+  border: 2px solid rgba(122, 2, 2, 0.562);
+  border-radius: 5px;
+}
+
+#texto-caja {
+  font-size: larger;
+}
+
+/*# sourceMappingURL=ejemplo.css.map */
